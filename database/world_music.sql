@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 28, 2020 at 06:28 PM
+-- Generation Time: Oct 28, 2020 at 06:46 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -54,14 +54,6 @@ CREATE TABLE `customers` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `customers`
---
-
-INSERT INTO `customers` (`id`, `name`, `email`, `password`, `old_password`, `confirm_password`, `division`, `district`, `country`, `created_at`, `updated_at`) VALUES
-(1, 'Mahbubul Alam', 'mahbub@gmail.com', '654321', NULL, '654321', 'Chattagram', 'Brahmanbaria', 'Bangladesh', '2020-10-28 14:52:44', '2020-10-28 14:53:28'),
-(2, 'Limon Alam', 'limoninfoo@gmail.com', '123456', NULL, '123456', '1', '5', 'Bangladesh', '2020-10-28 14:56:52', '2020-10-28 14:56:52');
 
 -- --------------------------------------------------------
 
@@ -443,7 +435,7 @@ ALTER TABLE `cover_images`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `districts`
